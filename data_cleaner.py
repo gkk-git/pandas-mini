@@ -4,7 +4,7 @@ Pandas Mini - A simple data cleaning library
 
 def remove_duplicates(data_list):
     """Remove duplicate values from list"""
-    return [item for item in data_list if isinstance(item, (int, float)) and item >= 0]
+    return set(data_list)
 
 def remove_nulls(data_list):
     """Remove None values from list"""
